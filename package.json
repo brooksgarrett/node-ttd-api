@@ -1,0 +1,32 @@
+{
+  "name": "node-ttd-api",
+  "version": "1.0.0",
+  "description": "The backend for managing a TTD deployment.",
+  "main": "server/server.js",
+  "repository": {},
+  "author": "Brooks Garrett <brooks@brooksgarrett.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/server.js",
+    "watch": "yarn nodemon -- server/server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
+    "test-w": "nodemon --exec \"mocha server/**/*.test.js\""
+  },
+  "engines": {
+    "node": "6.9.4"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "jsonwebtoken": "^7.2.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.8.1",
+    "validator": "^6.2.1"
+  }
+}
