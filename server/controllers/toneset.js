@@ -9,7 +9,7 @@ create: (req, res) => {
         toneID: req.body.toneID,
         description: req.body.description,
         aTone: req.body.aTone,
-        bTone: req.body.aTone,
+        bTone: req.body.bTone,
         aToneLength: req.body.aToneLength,
         bToneLength: req.body.bToneLength,
     });
