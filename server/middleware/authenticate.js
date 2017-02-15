@@ -8,7 +8,6 @@ var authenticate = (req, res, next) => {
             if (!user) {
                 return Promise.reject();
             }
-            console.log('find', JSON.stringify(user, undefined, 2));
             req.user = user;
             req.token = token;
             next();

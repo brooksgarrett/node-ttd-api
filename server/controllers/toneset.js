@@ -31,7 +31,6 @@ list: (req, res) => {
 },
 
 listSubscriptions: (req, res) => {
-    console.log(req.params.id);
     User.find({"subscriptions._toneset": req.params.id}).then((users) => {
         res.send({users});
     }, (e) => {

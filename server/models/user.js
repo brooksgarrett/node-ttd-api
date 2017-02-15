@@ -8,7 +8,8 @@ var subscriptionSchema = new mongoose.Schema({
     _toneset: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        trim: true
+        trim: true,
+        //unique: true
     },
     subType: {
         type: String,
@@ -44,6 +45,10 @@ var UserSchema = new mongoose.Schema({
         type: String,
         required: false,
         trim: true
+    },
+    preAlert: {
+        type: Boolean,
+        default: false
     },
     subscriptions: [subscriptionSchema],
     password: {

@@ -24,11 +24,11 @@ var Toneset = mongoose.model('Toneset', {
     },
     aToneLength: {
         type: Number,
-        required: true
+        default: 500
     },
     bToneLength: {
         type: Number,
-        required: true
+        default: 1000
     }
 });
 
